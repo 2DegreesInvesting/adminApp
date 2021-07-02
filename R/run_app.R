@@ -30,7 +30,7 @@ run_app <- function() {
     strong(p("Number of work days to charge for")),
     verbatimTextOutput("count"),
 
-    numericInput("daily_rate", "Daily rate (in contract)", value = 0, 0, max = 1e6),
+    numericInput("daily_rate", "Daily rate (in contract)", value = 0),
     strong(p("Total to charge for")),
     verbatimTextOutput("charge")
   )
