@@ -15,6 +15,7 @@ License: MIT + file LICENSE
 URL: https://github.com/2DegreesInvesting/invoiceApp
 BugReports: https://github.com/2DegreesInvesting/invoiceApp/issues
 Imports: 
+    pkgload,
     shiny
 Suggests: 
     covr
