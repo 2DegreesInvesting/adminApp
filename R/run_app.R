@@ -9,15 +9,33 @@
 #' }
 run_app <- function() {
   ui <- fluidPage(
-    dateRangeInput("range_in", "Invoice range"),
+    p(
+      paste(
+        "Contractors submit monthly invoices in which the amount",
+        "of days of service equal the number of weekdays within the",
+        "invoice period, irrespective of holidays or vacation days",
+        "spent. For example, the first invoice covered the time",
+        "range from April 28th to May 27th, resulting in 22 work",
+        "days to charge for."
+      )
+    ),
 
-    h1(p("Review")),
-    p("Invoice range:"),
-    verbatimTextOutput("range_out")
+    dateRangeInput(
+      "range",
+      "Range of service",
+      start = "2021-04-28",
+      end = "2021-05-27"
+    ),
+
+    strong(p("Number of work days to charge for")),
+    verbatimTextOutput("count")
   )
 
   server <- function(input, output, session) {
-    output$range_out <- renderPrint(input$range_in)
+    data_range <- reactive(input$range)
+    output$count <- renderPrint({
+      count_workdays(data_range()[[1]], data_range()[[2]])
+    })
   }
 
   shinyApp(ui, server)

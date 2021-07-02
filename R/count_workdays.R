@@ -1,13 +1,5 @@
 #' Calculate total pay between two dates
 #'
-#' Email on Wed, May 26, 2021 at 8:12 PM: "The daily rates that were calculated
-#' from our annualized salary excluded vacation / holiday days.  To get around a
-#' recalculation, **we will submit monthly invoices in which the amount due will
-#' be the number of weekdays within the invoice period, irrespective of holidays
-#' or vacation days spent**. This means that our first invoice will cover the
-#' time period of April 28th to May 27th and our monthly rate for this time
-#' period will be 22 days (22 * daily rate as documented in our contracts)."
-#'
 #' @param first Atomic string. First pay date (yyyy-mm-dd).
 #' @param last Atomic string. Last pay date (yyyy-mm-dd).
 #' @param daily Atomic double.
