@@ -28,14 +28,17 @@ run_app <- function() {
     ),
 
     strong(p("Number of work days to charge for")),
-    verbatimTextOutput("count")
+    verbatimTextOutput("count"),
+
+    numericInput("daily_rate", "Daily rate (in contract)", value = 0, 0, max = 1e6),
+    strong(p("Total to charge for")),
+    verbatimTextOutput("charge")
   )
 
   server <- function(input, output, session) {
-    data_range <- reactive(input$range)
-    output$count <- renderPrint({
-      count_workdays(data_range()[[1]], data_range()[[2]])
-    })
+    n_days <- reactive(count_workdays(input$range[[1]], input$range[[2]]))
+    output$count <- renderText(n_days())
+    output$charge <- renderText(n_days() * input$daily_rate)
   }
 
   shinyApp(ui, server)
