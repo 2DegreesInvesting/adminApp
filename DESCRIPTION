@@ -1,0 +1,24 @@
+Package: invoiceApp
+Title: Help Contractors Fill an Invoice
+Version: 0.0.0.9000
+Authors@R: 
+    c(person(given = "Mauro",
+             family = "Lepore",
+             role = c("aut", "ctr", "cre"),
+             email = "maurolepore@gmail.com",
+             comment = c(ORCID = "0000-0002-1986-7988")),
+      person(given = "2 Degrees Investing Initiative",
+             role = c("cph", "fnd"),
+             email = "contact@2degrees-investing.org"))
+Description: Help contractors fill an invoice.
+License: MIT + file LICENSE
+URL: https://github.com/2DegreesInvesting/invoiceApp
+BugReports: https://github.com/2DegreesInvesting/invoiceApp/issues
+Imports: 
+    shiny
+Suggests: 
+    covr
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
