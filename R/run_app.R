@@ -8,9 +8,7 @@
 #'   run_app()
 #' }
 run_app <- function() {
-  ui <- fluidPage(tabsetPanel(id = "tabs",
-                              tabPanelCalculate(),
-                              tabPanelInfo()))
+  ui <- fluidPage(tabsetPanel(id = "tabs", tabPanelCalculate(), tabPanelInfo()))
 
   server <- function(input, output, session) {
     n_days <-
