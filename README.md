@@ -13,7 +13,7 @@ status](https://www.r-pkg.org/badges/version/adminApp)](https://CRAN.R-project.o
 coverage](https://codecov.io/gh/2DegreesInvesting/adminApp/branch/master/graph/badge.svg)](https://codecov.io/gh/2DegreesInvesting/adminApp?branch=master)
 <!-- badges: end -->
 
-The goal of adminApp is to helps with administration tasks.
+The goal of adminApp is to help with administration tasks.
 
 ## Installation
 
