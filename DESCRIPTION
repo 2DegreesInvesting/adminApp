@@ -1,5 +1,5 @@
-Package: invoiceApp
-Title: Help Contractors Fill an Invoice
+Package: adminApp
+Title: Help with Administration Tasks
 Version: 0.0.0.9000
 Authors@R: 
     c(person(given = "Mauro",
@@ -10,10 +10,10 @@ Authors@R:
       person(given = "2 Degrees Investing Initiative",
              role = c("cph", "fnd"),
              email = "contact@2degrees-investing.org"))
-Description: Help contractors fill an invoice.
+Description: Help with administration tasks.
 License: MIT + file LICENSE
-URL: https://github.com/2DegreesInvesting/invoiceApp
-BugReports: https://github.com/2DegreesInvesting/invoiceApp/issues
+URL: https://github.com/2DegreesInvesting/adminApp
+BugReports: https://github.com/2DegreesInvesting/adminApp/issues
 Imports: 
     pkgload,
     shiny
