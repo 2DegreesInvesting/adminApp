@@ -10,8 +10,6 @@ count_workdays(first, last)
 \item{first}{Atomic string. First pay date (yyyy-mm-dd).}
 
 \item{last}{Atomic string. Last pay date (yyyy-mm-dd).}
-
-\item{daily}{Atomic double.}
 }
 \value{
 Atomic double.

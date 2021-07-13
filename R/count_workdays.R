@@ -2,7 +2,6 @@
 #'
 #' @param first Atomic string. First pay date (yyyy-mm-dd).
 #' @param last Atomic string. Last pay date (yyyy-mm-dd).
-#' @param daily Atomic double.
 #'
 #' @return Atomic double.
 #' @export

@@ -4,3 +4,6 @@
 ^README\.Rmd$
 ^\.github$
 ^codecov\.yml$
+^app\.R$
+^rstudioconnect$
+^rsconnect$

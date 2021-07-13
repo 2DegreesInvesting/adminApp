@@ -8,12 +8,23 @@
 #'   run_app()
 #' }
 run_app <- function() {
-  ui <- fluidPage(tabsetPanel(id = "tabs", tabPanelCalculate(), tabPanelInfo()))
+  ui <- fluidPage(
+    tabsetPanel(
+      id = "tabs",
+      tabPanel("Invoice", sidebarPanel(p(invoiceInfo())), invoice()),
+      tabPanel("Timesheet", timesheet())
+  ))
 
   server <- function(input, output, session) {
     n_days <- reactive(count_workdays(input$range[[1]], input$range[[2]]))
-    output$count <- renderText(n_days())
-    output$charge <- renderText(n_days() * input$daily_rate)
+    output$invoice_days_to_charge_for <- renderText(n_days())
+    output$invoice_amount_to_charge <- renderText(n_days() * input$daily_rate)
+
+    output$timesheet_days_per_grant <- renderPrint({
+      percents <- eval(parse(text = input$percents))
+      abort_if_allocation_is_not_100(percents)
+      days_per_grant(percents, input$days_to_fill)
+    })
   }
 
   shinyApp(ui, server)
