@@ -11,8 +11,8 @@ run_app <- function() {
   ui <- fluidPage(
     tabsetPanel(
       id = "tabs",
-      tabPanel("Timesheet", timesheet()),
-      tabPanel("Invoice", sidebarPanel(p(invoiceInfo())), invoice())
+      tabPanel("Invoice", sidebarPanel(p(invoiceInfo())), invoice()),
+      tabPanel("Timesheet", timesheet())
     )
   )
 
@@ -24,7 +24,7 @@ run_app <- function() {
     output$timesheet_days_per_grant <- renderPrint({
       grants <- get_grants(input)
       percents <- pull_item_matching(input, "pcnt")
-      percents <- setNames(percents, grants)
+      names(percents) <- grants
       percents <- percents[percents != 0]
 
       abort_if_allocation_is_not_100(percents)
