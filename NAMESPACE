@@ -3,3 +3,6 @@
 export(count_workdays)
 export(run_app)
 import(shiny)
+importFrom(purrr,map)
+importFrom(purrr,map2)
+importFrom(purrr,set_names)

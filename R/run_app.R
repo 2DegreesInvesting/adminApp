@@ -12,7 +12,7 @@ run_app <- function() {
     tabsetPanel(
       id = "tabs",
       tabPanel("Invoice", sidebarPanel(p(invoiceInfo())), invoice()),
-      tabPanel("Timesheet", timesheet())
+      tabPanel("Timesheet", sidebarPanel(p(timesheetInfo())), timesheet())
     )
   )
 
@@ -28,7 +28,8 @@ run_app <- function() {
       percents <- percents[percents != 0]
 
       abort_if_allocation_is_not_100(percents)
-      as.list(days_per_grant(percents, input$days_to_fill))
+      out <- as.list(days_per_grant(percents, input$days_to_fill))
+      format_days_hours(out)
     })
   }
 
