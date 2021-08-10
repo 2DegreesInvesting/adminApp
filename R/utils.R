@@ -11,6 +11,6 @@ get_grants <- function(input, pattern = "grant") {
 alert <- function() {
   paste(
     "WARNING: This tool doesn't transmit anything to 2DII. It just helps",
-    "figure out what numbers to put in yourtemplates."
+    "figure out what numbers to put in your templates."
   )
 }
