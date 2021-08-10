@@ -3,6 +3,8 @@
 export(count_workdays)
 export(run_app)
 import(shiny)
+importFrom(bslib,bs_theme)
 importFrom(purrr,map)
 importFrom(purrr,map2)
 importFrom(purrr,set_names)
+importFrom(thematic,thematic_shiny)

@@ -15,9 +15,11 @@ License: MIT + file LICENSE
 URL: https://github.com/2DegreesInvesting/adminApp
 BugReports: https://github.com/2DegreesInvesting/adminApp/issues
 Imports: 
+    bslib,
     pkgload,
     purrr,
-    shiny
+    shiny,
+    thematic
 Suggests: 
     covr
 Encoding: UTF-8

@@ -2,7 +2,7 @@
 % Please edit documentation in R/run_app.R
 \name{run_app}
 \alias{run_app}
-\title{litigationRisk app}
+\title{Run the adminApp}
 \usage{
 run_app()
 }
@@ -10,7 +10,7 @@ run_app()
 Called for its side effect.
 }
 \description{
-litigationRisk app
+Run the adminApp
 }
 \examples{
 if (interactive()) {

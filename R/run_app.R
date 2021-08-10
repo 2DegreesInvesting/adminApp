@@ -1,4 +1,4 @@
-#' litigationRisk app
+#' Run the adminApp
 #'
 #' @return Called for its side effect.
 #' @export
@@ -9,6 +9,7 @@
 #' }
 run_app <- function() {
   ui <- fluidPage(
+    theme = theme_2dii(),
     tabsetPanel(
       id = "tabs",
       tabPanel("Invoice", sidebarPanel(p(invoiceInfo())), invoice()),
@@ -17,6 +18,8 @@ run_app <- function() {
   )
 
   server <- function(input, output, session) {
+    thematic_shiny()
+
     n_days <- reactive(count_workdays(input$range[[1]], input$range[[2]]))
     output$invoice_days_to_charge_for <- renderText(n_days())
     output$invoice_amount_to_charge <- renderText(n_days() * input$daily_rate)
