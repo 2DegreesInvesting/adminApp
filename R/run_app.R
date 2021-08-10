@@ -12,8 +12,14 @@ run_app <- function() {
     theme = theme_2dii(),
     tabsetPanel(
       id = "tabs",
-      tabPanel("Invoice", sidebarPanel(p(invoiceInfo())), invoice()),
-      tabPanel("Timesheet", sidebarPanel(p(timesheetInfo())), timesheet())
+      tabPanel(
+        "Invoice",
+        sidebarPanel(strong(alert()), hr(), p(invoiceInfo())), invoice()
+      ),
+      tabPanel(
+        "Timesheet",
+        sidebarPanel(strong(alert()), hr(), p(timesheetInfo())), timesheet()
+      )
     )
   )
 

@@ -13,7 +13,10 @@ status](https://www.r-pkg.org/badges/version/adminApp)](https://CRAN.R-project.o
 coverage](https://codecov.io/gh/2DegreesInvesting/adminApp/branch/master/graph/badge.svg)](https://codecov.io/gh/2DegreesInvesting/adminApp?branch=master)
 <!-- badges: end -->
 
-The goal of adminApp is to help with administration tasks.
+The goal of adminApp is to help with administration tasks. **It doesn’t
+transmit anything to 2DII**. It just helps figure out what numbers to
+put in your templates. For example, it helps you calculate the number of
+days to put on the invoice, and help break down the BeeBole allocations.
 
 ## Installation
 
