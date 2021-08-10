@@ -1,3 +1,3 @@
-install.packages('shiny')
-install.packages('pkgload')
-install.packages('purrr')
+install.packages("remotes")
+remotes::install_deps(dependencies = TRUE)
+
