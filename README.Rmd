@@ -17,7 +17,7 @@ knitr::opts_chunk$set(
 [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 [![CRAN status](https://www.r-pkg.org/badges/version/adminApp)](https://CRAN.R-project.org/package=adminApp)
 [![R-CMD-check](https://github.com/2DegreesInvesting/adminApp/workflows/R-CMD-check/badge.svg)](https://github.com/2DegreesInvesting/adminApp/actions)
-[![Codecov test coverage](https://codecov.io/gh/2DegreesInvesting/adminApp/branch/master/graph/badge.svg)](https://codecov.io/gh/2DegreesInvesting/adminApp?branch=master)
+[![Codecov test coverage](https://codecov.io/gh/2DegreesInvesting/adminApp/branch/main/graph/badge.svg)](https://codecov.io/gh/2DegreesInvesting/adminApp?branch=main)
 <!-- badges: end -->
 
 The goal of adminApp is to help with administration tasks. **It doesn't transmit

@@ -5,7 +5,7 @@ invoiceInfo <- function() {
     "irrespective of holidays or vacation days spent. The first invoice",
     "covered April 28 to May 27 (22 days); The second invoice covered May",
     "28 to June 30 (24 days). Other invoices cover full months, e.g. July",
-    "1 to 31 (22 days)."
+    "1 to 31 (22 days). Send invoices to rechnungen@2degrees-investing.org."
   )
 }
 
